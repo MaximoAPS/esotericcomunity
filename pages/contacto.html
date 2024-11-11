@@ -116,11 +116,18 @@
 
             <main class="contacto">
                 <form action="https://formspree.io/f/xbljdqew" method="post">
-                    <fieldset>
-                        <legend>Contacto</legend>
-                        <label for="email">Your Email</label>
+                    <fieldset class="contacto-form">
+                        <legend>Contactanos</legend>
+                        <label for="email">Tu Email:</label>
                         <input name="Email" id="email" type="email">
-                        <button type="submit">Submit</button>
+                        <label for="nombre">Tu nombre y apellido:</label>
+                        <input name="Nombre" id="nombre" type="text">
+                        <label for="mensaje">Tu mensaje:</label>
+                        <textarea name="Mensaje" id="mensaje" cols="30" rows="10"></textarea>
+                        <button 
+                        type="submit" 
+                        class="submit-button"
+                        onclick="alert('Muchas gracias por tu mensaje!')">Submit</button>
                     </fieldset>
                 </form>
             </main>

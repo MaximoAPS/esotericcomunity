@@ -336,49 +336,7 @@ p {
   margin-left: 5%;
 }
 
-form {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
 
-fieldset {
-  width: 100%;
-  max-width: 400px;
-  margin: 0 auto;
-  padding: 2rem;
-  background-color: #f9f9f9;
-  border: 0.1rem solid #cecece;
-  border-radius: 2rem;
-  padding: 3rem;
-  margin: 0;
-}
-
-legend {
-  background-color: #d8eaff;
-  border: 0.1rem solid #cecece;
-  padding: 0.5rem;
-  border-radius: 3rem;
-  font-size: 1.5rem;
-  color: #333;
-  font-weight: bold;
-  margin-bottom: 0.1rem;
-}
-
-label {
-  display: block;
-  margin-bottom: 1rem;
-  color: #555;
-  font-size: 1rem;
-}
-
-input[type="text"] {
-  width: 100%;
-  padding: 1rem;
-  margin-bottom: 1.5rem;
-  border: 0.1rem solid #ccc;
-  border-radius: 5px;
-  font-size: 1rem;
-  box-sizing: border-box;
-}
 
 @media (max-width: 900px) {
   .aside {
@@ -536,4 +494,79 @@ input[type="text"] {
       }
     }
   }
+}
+
+/* Contacto input */
+
+fieldset {
+  display: flex;
+  flex: 1 0 auto;
+  flex-direction: column;
+  width: 100%;
+  max-width: 40rem;
+  min-width: 20rem;
+  padding: 2rem;
+  background-color: #f9f9f9;
+  border: 0.1rem solid #cecece;
+  border-radius: 2rem;
+  padding: 3rem;
+  margin-top: 5rem;
+  background: linear-gradient(to left,transparent,white 50%), url(../img/wheelOfFortune.jpeg);
+  background-size: contain;
+}
+
+legend {
+  background-color: rgba(144, 181, 255, 0.8);
+  border: 0.1rem solid #cecece;
+  padding: 0.5rem;
+  border-radius: 3rem;
+  font-size: 1.5rem;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 0.1rem;
+}
+
+label {
+  display: block;
+  margin: 0.5rem;
+  color: #555;
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding-left: 1rem;
+}
+
+input {
+  width: 100%;
+  margin: 1rem;
+  border: 0.1rem solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+textarea {
+  width: 100%;
+  padding: 1rem;
+  margin: 1rem;
+  border: 0.1rem solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.submit-button {
+  width: 50%;
+  padding: 1rem;
+  font-weight: bold;
+  background-color: rgb(100, 255, 150);
+  margin: 1rem;
+  border: 0.1rem solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.submit-button:hover{
+  background-color: rgb(50, 125, 75);
+  color:white;
 }
