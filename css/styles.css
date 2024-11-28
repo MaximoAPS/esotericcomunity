@@ -270,13 +270,14 @@ input:-moz-placeholder {
 section {
   color: #111;
   margin-top: 1rem;
+  padding-top: 1rem;
 
   /* The container */
   .container {
     margin: 0px;
     padding-inline: 1rem 1rem;
     cursor: pointer;
-    min-height: 10rem;
+    min-height: 12.5rem;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -284,6 +285,16 @@ section {
   }
   .card-text{
     display: none;
+    font-size: 0.5;
+  }
+  .card-title {
+    margin: 0.5rem;
+    font-size: 2rem;
+    font-weight: 350;
+  }
+
+  .card-body{
+    min-height: inherit;
   }
 
   /* Hide the browser's default radio button */
@@ -295,14 +306,15 @@ section {
 
   .container>.card {
     border-radius: 10rem 0 0 10rem;
+    min-height: inherit;
+    .row{
+      min-height: inherit;
+    }
   }
 
   /* On mouse-over, add a grey background color */
   .container>.card:hover {
-    background-color: #ccc;
-    .side-img {
-      background-color: #ccc;
-    }
+    box-shadow: 1rem 1rem 1rem #111;
   }
 
   /* When the radio button is checked, add a blue background */
@@ -312,18 +324,25 @@ section {
     .side-img {
       display: none;
     }
+    .card-title {
+      margin: 0;
+      font-weight: 500;
+    }
+
     .card-body{
       margin-left: 10rem;
     }
 
     .card-text{
       display: block;
+      font-size: 1.2rem;
+      font-weight: 450;
     }
   }
 
   /*Side image*/
   .side-img {
-    background: linear-gradient(to right,transparent,white 80%), url("../img/product1.jpg");
+    background: linear-gradient(to right,transparent,white 70%), url("../img/product1.jpg");
     background-size: contain;
     border-radius: 10rem 0 0 10rem;
     background-blend-mode: darken;
@@ -333,11 +352,18 @@ section {
     display: flex;
     flex-wrap: nowrap;
     flex: 1 0 auto;
+    justify-self: end;
+    position: absolute;
+    right:0;
+    bottom: 0;
+    font-size: 0.8;
+
     li{
       display: flex;
       justify-content: center;
       margin-left:1rem;
       margin-right:1rem;
+      padding: 0.5rem;
     }
 
     li:hover{
@@ -509,6 +535,7 @@ section {
       border-radius: 10rem 0 0 10rem;
       background-blend-mode: darken;
     }
+  }
 }
 
 /* Contacto input */
