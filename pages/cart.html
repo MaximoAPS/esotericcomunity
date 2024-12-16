@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Inicio</title>
+        <link rel="shortcut icon" href="../img/tarot_icon.ico" type="img/x-icon" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+          rel="stylesheet"
+        />
+    
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+    
+        <link rel="stylesheet" href="../css/styles.css" />
+        <link rel="stylesheet" href="../css/custom.min.css" />
+        <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+        
+      </head>
+
+      <body>
+    <header>
+      <img
+        src="../img/tarot_cards.gif"
+        alt="card gif"
+        height="40px"
+        id="headergif"
+      />
+      <h1 class="header-title">Arcane Shop Online</h1>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light py-0">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-lg-0">
+            <li class="nav-item mx-1">
+              <a class="nav-link btn btn-light" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item mx-1">
+              <a class="nav-link btn btn-light" href="../pages/talleres.html"
+                >Talleres</a
+              >
+            </li>
+            <li class="nav-item mx-1">
+              <a
+                class="nav-link btn btn-light"
+                href="../pages/preguntasFrecuentes.html"
+                >Preguntas frecuentes</a
+              >
+            </li>
+            <li class="nav-item mx-1">
+              <a class="nav-link btn btn-light" href="../pages/contacto.html"
+                >Contacto</a
+              >
+            </li>
+          </ul>
+
+          <div class="flex-space"></div>
+
+          <div class="search last-item">
+            <div class="search--wrapper">
+              <form class="search--form" action="#" method="post">
+                <div class="search--input-wrapper">
+                  <input
+                    class="search--input"
+                    type="search"
+                    placeholder="Buscar..."
+                  />
+                </div>
+                <input class="search--submit" type="submit" value="&#10140;"/>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="aside col-md-auto">
+          <div class="image-aside">
+            <div class="aside-navbar">
+              <div class="aside-navbar-title">HORÓSCOPO</div>
+              <div class="aside-item">
+                <img src="../img/aries.svg" alt="Aries" />
+                <a href="#">Aries</a>
+              </div>
+              <div class="aside-item">
+                <img src="../img/tauro.svg" alt="Tauro" />
+                <a href="index.html">Tauro</a>
+              </div>
+              <div class="aside-item">
+                <img src="../img/geminis.svg" alt="Geminis" />
+                <a href="index.html">Géminis</a>
+              </div>
+              <div class="aside-item">
+                <img src="../img/cancer.svg" alt="Cancer" />
+                <a href="index.html">Cancer</a>
+              </div>
+              <div class="aside-item">
+                <img src="../img/leo.svg" alt="Leo" />
+                <a href="index.html">Leo</a>
+              </div>
+              <div class="aside-item">
+                <img src="../img/virgo.svg" alt="Virgo" />
+                <a href="index.html">Virgo</a>
+              </div>
+              <div class="aside-item">
+                <img src="../img/libra.svg" alt="Libra" />
+                <a href="index.html">Libra</a>
+              </div>
+              <div class="aside-item">
+                <img src="../img/escorpio.svg" alt="Escorpio" />
+                <a href="index.html">Escorpio</a>
+              </div>
+              <div class="aside-item">
+                <img src="../img/sagitario.svg" alt="Sagitario" />
+                <a href="index.html">Sagitario</a>
+              </div>
+              <div class="aside-item">
+                <img src="../img/capricornio.svg" alt="Capricornio" />
+                <a href="index.html">Capricornio</a>
+              </div>
+              <div class="aside-item">
+                <img src="../img/acuario.svg" alt="Acuario" />
+                <a href="index.html">Acuario</a>
+              </div>
+              <div class="aside-item">
+                <img src="../img/piscis.svg" alt="Piscis" />
+                <a href="index.html">Piscis</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="main col-lg-auto p-5">
+            <h1>Tienda de Productos</h1>
+   
+            <div id="productos">
+                <div class="producto">
+                    <span>Laptop - $800</span>
+                    <span>Stock: <span id="stock-laptop">10</span></span>
+                    <button onclick="agregarAlCarrito('laptop')">Agregar</button>
+                </div>
+                <div class="producto">
+                    <span>Smartphone - $500</span>
+                    <span>Stock: <span id="stock-smartphone">15</span></span>
+                    <button onclick="agregarAlCarrito('smartphone')">Agregar</button>
+                </div>
+                <div class="producto">
+                    <span>Tablet - $300</span>
+                    <span>Stock: <span id="stock-tablet">8</span></span>
+                    <button onclick="agregarAlCarrito('tablet')">Agregar</button>
+                </div>
+            </div>
+
+            <div id="carrito">
+                <h2>Carrito de Compras</h2>
+                <ul id="lista-carrito"></ul>
+                <p>Subtotal: $<span id="subtotal-carrito">0</span></p>
+                <p>Descuento: $<span id="descuento-carrito">0</span></p>
+                <p>IVA (21%): $<span id="iva-carrito">0</span></p>
+                <p><strong>Total: $<span id="total-carrito">0</span></strong></p>
+                <button onclick="vaciarCarrito()">Vaciar Carrito</button>
+                <button onclick="mostrarCheckout()">Checkout</button>
+            </div>
+
+            <!-- Modal de Checkout -->
+            <div id="checkout-modal">
+                <div class="checkout-content">
+                    <h2>Finalizar Compra</h2>
+                    <p>Subtotal: $<span id="modal-subtotal">0</span></p>
+                    <p>Descuento: $<span id="modal-descuento">0</span></p>
+                    <p>IVA: $<span id="modal-iva">0</span></p>
+                    <p><strong>Total a Pagar: $<span id="modal-total">0</span></strong></p>
+                    <button onclick="realizarCompra()">Confirmar Compra</button>
+                    <button onclick="cerrarCheckout()">Cancelar</button>
+                </div>
+            </div>
+
+            <script src="../scripts/cart.js"></script>
+        </div>
+      </body>
+    
+</html>

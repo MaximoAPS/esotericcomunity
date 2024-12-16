@@ -1,0 +1,13 @@
+// Custom.scss
+
+// Then add additional custom code here
+
+$primary:       #67CCD1;
+$secondary:     #FF9100;
+$info:          #27A2CC;
+$light:         #FDAA23;
+$dark:          #052A75;
+
+// Include any default variable overrides here (though functions won't be available)
+
+@import "../node_modules/bootstrap/scss/bootstrap";
