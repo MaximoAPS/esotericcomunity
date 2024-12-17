@@ -1,40 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Inicio</title>
-        <link rel="shortcut icon" href="../img/tarot_icon.ico" type="img/x-icon" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
-          rel="stylesheet"
-        />
-    
-        <link
-          rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-        />
-    
-        <link rel="stylesheet" href="../css/styles.css" />
-        <link rel="stylesheet" href="../css/custom.min.css" />
-        <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
-        
-      </head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inicio</title>
+    <link rel="shortcut icon" href="../img/tarot_icon.ico" type="img/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet" />
 
-      <body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/custom.min.css" />
+    <script
+      src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+
+  </head>
+
+  <body>
     <header>
       <img
         src="../img/tarot_cards.gif"
         alt="card gif"
         height="40px"
-        id="headergif"
-      />
+        id="headergif" />
       <h1 class="header-title">Arcane Shop Online</h1>
     </header>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light py-0">
+    <nav class="navbar navbar-expand-lg navbar-primary bg-primary py-0">
       <div class="container-fluid">
         <button
           class="navbar-toggler"
@@ -43,32 +41,29 @@
           data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent"
           aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
+          aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-lg-0">
             <li class="nav-item mx-1">
-              <a class="nav-link btn btn-light" href="../index.html">Inicio</a>
+              <a class="nav-link btn btn-primary"
+                href="../index.html">Inicio</a>
             </li>
             <li class="nav-item mx-1">
-              <a class="nav-link btn btn-light" href="../pages/talleres.html"
-                >Talleres</a
-              >
+              <a class="nav-link btn btn-primary"
+                href="../pages/talleres.html">Talleres</a>
             </li>
             <li class="nav-item mx-1">
               <a
-                class="nav-link btn btn-light"
-                href="../pages/preguntasFrecuentes.html"
-                >Preguntas frecuentes</a
-              >
+                class="nav-link btn btn-primary"
+                href="../pages/preguntasFrecuentes.html">Preguntas
+                frecuentes</a>
             </li>
             <li class="nav-item mx-1">
-              <a class="nav-link btn btn-light" href="../pages/contacto.html"
-                >Contacto</a
-              >
+              <a class="nav-link btn btn-primary"
+                href="../pages/contacto.html">Contacto</a>
             </li>
           </ul>
 
@@ -81,10 +76,9 @@
                   <input
                     class="search--input"
                     type="search"
-                    placeholder="Buscar..."
-                  />
+                    placeholder="Buscar..." />
                 </div>
-                <input class="search--submit" type="submit" value="&#10140;"/>
+                <input class="search--submit" type="submit" value="&#10140;" />
               </form>
             </div>
           </div>
@@ -151,52 +145,84 @@
         </div>
 
         <div class="main col-lg-auto p-5">
-            <h1>Tienda de Productos</h1>
-   
-            <div id="productos">
-                <div class="producto">
-                    <span>Laptop - $800</span>
-                    <span>Stock: <span id="stock-laptop">10</span></span>
-                    <button onclick="agregarAlCarrito('laptop')">Agregar</button>
-                </div>
-                <div class="producto">
-                    <span>Smartphone - $500</span>
-                    <span>Stock: <span id="stock-smartphone">15</span></span>
-                    <button onclick="agregarAlCarrito('smartphone')">Agregar</button>
-                </div>
-                <div class="producto">
-                    <span>Tablet - $300</span>
-                    <span>Stock: <span id="stock-tablet">8</span></span>
-                    <button onclick="agregarAlCarrito('tablet')">Agregar</button>
-                </div>
+          <div class="container py-5">
+            <h1 class="text-center mb-4"><img
+              src="../img/tarot_cards.gif"
+              alt="card gif"
+              height="40px"
+              id="headergif" /> Arcane Shop</h1>
+
+            <!-- Productos -->
+            <div id="productos" class="row gy-4">
+              <div class="col-md-4" id="columna1"></div>
+              <div class="col-md-4" id="columna2"></div>
+              <div class="col-md-4" id="columna3"></div>
             </div>
 
-            <div id="carrito">
-                <h2>Carrito de Compras</h2>
-                <ul id="lista-carrito"></ul>
-                <p>Subtotal: $<span id="subtotal-carrito">0</span></p>
-                <p>Descuento: $<span id="descuento-carrito">0</span></p>
-                <p>IVA (21%): $<span id="iva-carrito">0</span></p>
-                <p><strong>Total: $<span id="total-carrito">0</span></strong></p>
-                <button onclick="vaciarCarrito()">Vaciar Carrito</button>
-                <button onclick="mostrarCheckout()">Checkout</button>
+            <!-- Carrito de Compras -->
+            <div id="carrito" class="mt-5">
+              <h2 class="text-center mb-4">Carrito</h2>
+              <div class="card shadow-sm">
+                <div class="card-body">
+                  <ul id="lista-carrito" class="list-group mb-3"></ul>
+                  <p>Subtotal: $<span id="subtotal-carrito"
+                      class="fw-bold">0</span></p>
+                  <p>Descuento: $<span id="descuento-carrito"
+                      class="fw-bold">0</span></p>
+                  <p>IVA (21%): $<span id="iva-carrito"
+                      class="fw-bold">0</span></p>
+                  <p class="fs-5"><strong>Total: $<span id="total-carrito"
+                        class="fw-bold">0</span></strong></p>
+                  <div class="d-flex gap-2">
+                    <button class="btn btn-danger flex-fill"
+                      onclick="vaciarCarrito()">Vaciar Carrito</button>
+                    <button class="btn btn-success flex-fill"
+                      onclick="mostrarCheckout()">Checkout</button>
+                  </div>
+                </div>
+              </div>
             </div>
 
             <!-- Modal de Checkout -->
-            <div id="checkout-modal">
-                <div class="checkout-content">
-                    <h2>Finalizar Compra</h2>
-                    <p>Subtotal: $<span id="modal-subtotal">0</span></p>
-                    <p>Descuento: $<span id="modal-descuento">0</span></p>
-                    <p>IVA: $<span id="modal-iva">0</span></p>
-                    <p><strong>Total a Pagar: $<span id="modal-total">0</span></strong></p>
-                    <button onclick="realizarCompra()">Confirmar Compra</button>
-                    <button onclick="cerrarCheckout()">Cancelar</button>
+            <div class="modal fade" id="checkoutModal" tabindex="-1"
+              aria-labelledby="checkoutModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="checkoutModalLabel">Finalizar
+                      Compra</h5>
+                    <button type="button" class="btn-close"
+                      data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <p>Subtotal: $<span id="modal-subtotal"
+                        class="fw-bold">0</span></p>
+                    <p>Descuento: $<span id="modal-descuento"
+                        class="fw-bold">0</span></p>
+                    <p>IVA: $<span id="modal-iva" class="fw-bold">0</span></p>
+                    <p class="fs-5"><strong>Total a Pagar: $<span
+                          id="modal-total" class="fw-bold">0</span></strong></p>
+                  </div>
+                  <div class="modal-footer">
+                    <button class="btn btn-primary"
+                      onclick="realizarCompra()">Confirmar Compra</button>
+                    <button class="btn btn-secondary" data-bs-dismiss="modal"
+                      onclick="cerrarCheckout()">Cancelar</button>
+                  </div>
                 </div>
+              </div>
             </div>
-
-            <script src="../scripts/cart.js"></script>
+          </div>
         </div>
-      </body>
-    
+      </div>
+    </div>
+    <footer>
+      <p>
+        &copy; 2024 Arcane Shop Online. Todos los derechos reservados.
+        <a href="https://www.freepik.com/search">Icon by Freepik</a>
+      </p>
+    </footer>
+    <script src="../scripts/cart.js"></script>
+  </body>
+
 </html>

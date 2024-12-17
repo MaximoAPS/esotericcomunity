@@ -9,84 +9,135 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet" />
 
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/custom.min.css" />
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
-    <script src="https://kit.fontawesome.com/7af0f8d36d.js" crossorigin="anonymous"></script>
-    
+    <script
+      src="https://kit.fontawesome.com/7af0f8d36d.js"
+      crossorigin="anonymous"></script>
   </head>
 
   <body>
-
-    <button type="button" class="btn btn-success m-2 btn-agregar-producto" onclick="agregarProductoButton()">
-      Agregar Producto <span class="badge badge-pill badge-success"><p class="h4"><i class="fa-solid fa-square-plus"></i></p></span>
+    <button
+      type="button"
+      class="btn btn-success m-2 btn-agregar-producto"
+      onclick="agregarProductoButton()">
+      Agregar Producto
+      <span class="badge badge-pill badge-success"><p class="h4"><i
+            class="fa-solid fa-square-plus"></i></p></span>
     </button>
 
+    <a class="btn btn-success m-3 btn-carrito" href="pages/cart.html"><i
+        class="fa-solid fa-cart-shopping">
+      </i>
+    </a>
+
     <div class="container" id="agregar-producto">
-      
       <!-- Contenedor para el formulario de agregar producto -->
       <div class="row justify-content-center">
-        
         <div class="col-md-6">
-          
           <div class="card shadow-sm">
             <div class="card-body rounded-dark-2">
               <!-- Close Button -->
-              <button type="button" class="btn-close m-2" aria-label="Close" onclick="agregarProductoButton()"></button>
+              <button
+                type="button"
+                class="btn-close m-2"
+                aria-label="Close"
+                onclick="agregarProductoButton()"></button>
 
               <h5 class="card-title text-center mb-4">Agregar Producto</h5>
-    
+
               <form id="agregarProductoForm">
                 <!-- Nombre del Producto -->
                 <div class="mb-3">
-                  <label for="productoNombre" class="form-label">Nombre del Producto</label>
-                  <input type="text" class="form-control" id="productoNombre" placeholder="Nombre del Producto">
+                  <label for="productoNombre" class="form-label">Nombre del
+                    Producto</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="productoNombre"
+                    placeholder="Nombre del Producto" />
                 </div>
-    
+
                 <!-- Descripción del Producto -->
                 <div class="mb-3">
-                  <label for="productoDescripcion" class="form-label">Descripción del Producto</label>
-                  <textarea type="text" class="form-control" id="productoDescripcion" placeholder="Descripción del Producto"></textarea>
+                  <label for="productoDescripcion"
+                    class="form-label">Descripción del Producto</label>
+                  <textarea
+                    type="text"
+                    class="form-control"
+                    id="productoDescripcion"
+                    placeholder="Descripción del Producto"></textarea>
                 </div>
-    
+
                 <!-- Precio del Producto -->
                 <div class="mb-3">
-                  <label for="productoPrecio" class="form-label">Precio del Producto</label>
-                  <input type="number" class="form-control" id="productoPrecio" placeholder="Precio del Producto">
+                  <label for="productoPrecio" class="form-label">Precio del
+                    Producto</label>
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="productoPrecio"
+                    placeholder="Precio del Producto" />
                 </div>
-    
+
                 <!-- Selección del Número de Producto -->
                 <div class="mb-3">
-                  <label class="form-label">Selecciona el número del producto:</label><br>
-                  <div class="form-check  form-check-inline ml-4">
-                    <input class="form-check-input" type="radio" name="numeroProducto" id="producto1" value="1" checked>
+                  <label class="form-label">Selecciona el número del
+                    producto:</label><br />
+                  <div class="form-check form-check-inline ml-4">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="numeroProducto"
+                      id="producto1"
+                      value="1"
+                      checked />
                     <label class="form-check-label" for="producto1">1</label>
                   </div>
-                  <div class="form-check  form-check-inline">
-                    <input class="form-check-input" type="radio" name="numeroProducto" id="producto2" value="2">
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="numeroProducto"
+                      id="producto2"
+                      value="2" />
                     <label class="form-check-label" for="producto2">2</label>
                   </div>
-                  <div class="form-check  form-check-inline">
-                    <input class="form-check-input" type="radio" name="numeroProducto" id="producto3" value="3">
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="numeroProducto"
+                      id="producto3"
+                      value="3" />
                     <label class="form-check-label" for="producto3">3</label>
                   </div>
                   <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="numeroProducto" id="producto4" value="4">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="numeroProducto"
+                      id="producto4"
+                      value="4" />
                     <label class="form-check-label" for="producto4">4</label>
                   </div>
                 </div>
-    
+
                 <!-- Botón para agregar el producto -->
                 <div class="d-grid gap-2">
-                  <button type="button" class="btn btn-primary" id="agregar-producto-button">Agregar Producto</button>
+                  <button
+                    type="button"
+                    class="btn btn-primary"
+                    id="agregar-producto-button">
+                    Agregar Producto
+                  </button>
                 </div>
               </form>
             </div>
@@ -94,15 +145,13 @@
         </div>
       </div>
     </div>
-    
 
     <header>
       <img
         src="img/tarot_cards.gif"
         alt="card gif"
         height="40px"
-        id="headergif"
-      />
+        id="headergif" />
       <h1 class="header-title">Arcane Shop Online</h1>
     </header>
 
@@ -115,8 +164,7 @@
           data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent"
           aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
+          aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
 
@@ -126,21 +174,17 @@
               <a class="nav-link btn btn-primary" href="index.html">Inicio</a>
             </li>
             <li class="nav-item mx-1">
-              <a class="nav-link btn btn-primary" href="pages/talleres.html"
-                >Talleres</a
-              >
+              <a class="nav-link btn btn-primary"
+                href="pages/talleres.html">Talleres</a>
             </li>
             <li class="nav-item mx-1">
               <a
                 class="nav-link btn btn-primary"
-                href="pages/preguntasFrecuentes.html"
-                >Preguntas frecuentes</a
-              >
+                href="pages/preguntasFrecuentes.html">Preguntas frecuentes</a>
             </li>
             <li class="nav-item mx-1">
-              <a class="nav-link btn btn-primary" href="pages/contacto.html"
-                >Contacto</a
-              >
+              <a class="nav-link btn btn-primary"
+                href="pages/contacto.html">Contacto</a>
             </li>
           </ul>
 
@@ -153,10 +197,9 @@
                   <input
                     class="search--input"
                     type="search"
-                    placeholder="Buscar..."
-                  />
+                    placeholder="Buscar..." />
                 </div>
-                <input class="search--submit" type="submit" value="&#10140;"/>
+                <input class="search--submit" type="submit" value="&#10140;" />
               </form>
             </div>
           </div>
@@ -224,294 +267,8 @@
         <div class="main col">
           <section>
             <div class="row products-list">
-              <div class="col-sm-6" id="productos-impar">
-                <label class="container producto1">
-                  <div class="card mb-3 product">
-                    <div class="row g-0">
-                      <div class="col-auto side-img1"></div>
-                      <div class="col">
-                        <div class="card-body">
-                          <h4 class="card-title">Producto 3</h4>
-                          <p class="card-text">Some example text.</p>
-                          <p class="card-text">
-                            This is a wider card with supporting text below as a
-                            natural lead-in to additional content. This content
-                            is a little bit longer. Lorem ipsum dolor sit amet
-                            consectetur adipisicing elit. Numquam repellendus
-                            repudiandae soluta possimus eveniet! Accusamus
-                            laboriosam veniam quae deleniti, odit magni
-                            assumenda, excepturi amet, adipisci aliquid cumque
-                            eligendi eaque laudantium.
-                          </p>
-                          <div class="rating">
-                            <span class="fa fa-star checked"></span> 4.7
-                          </div>
-                          <div class="price">$ 9.999,99</div>
-                          <p class="card-text">
-                            <small class="text-muted"
-                              >Por Jhon Doe</small
-                            >
-                          </p>
-                          <ul class="product-buttons">
-                            <li class="ver-perfil"><a href="" class="btn btn-secondary">Ver Perfil</a></li>
-                            <li class="carrito"><a href="" class="btn btn-secondary"><i class="fa-solid fa-cart-plus"></i></a></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                    <input type="radio" checked="checked" name="radio" />
-                  </div>
-                </label>
-                <label class="container producto2">
-                  <div class="card mb-3">
-                    <div class="row g-0">
-                      <div class="col-auto side-img2"></div>
-                      <div class="col">
-                        <div class="card-body">
-                          <h4 class="card-title">Producto 2</h4>
-                          <p class="card-text">
-                            This is a wider card with supporting text below as a
-                            natural lead-in to additional content. This content
-                            is a little bit longer. Lorem ipsum dolor sit amet
-                            consectetur adipisicing elit. Nobis aliquid adipisci
-                            dolore incidunt eos voluptas id, quia quos esse quae
-                            eveniet, neque possimus libero! Esse, inventore
-                            aliquid. Nostrum, officia corrupti.
-                          </p>
-                          <div class="rating">
-                            <span class="fa fa-star checked"></span> 4.7
-                          </div>
-                          <div class="price">$ 9.999,99</div>
-                          <p class="card-text">
-                            <small class="text-muted"
-                              >Por Jhon Doe</small
-                            >
-                          </p>
-                          <ul class="product-buttons">
-                            <li class="ver-perfil"><a href="" class="btn btn-secondary">Ver Perfil</a></li>
-                            <li class="carrito"><a href="" class="btn btn-secondary"><i class="fa-solid fa-cart-plus"></i></a></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                    <input type="radio" checked="checked" name="radio" />
-                  </div>
-                </label>
-                <label class="container producto3">
-                  <div class="card mb-3">
-                    <div class="row g-0">
-                      <div class="col-auto side-img3"></div>
-                      <div class="col">
-                        <div class="card-body">
-                          <h4 class="card-title">Producto 3</h4>
-                          <p class="card-text">Some example text.</p>
-                          <p class="card-text">
-                            This is a wider card with supporting text below as a
-                            natural lead-in to additional content. This content
-                            is a little bit longer. Lorem ipsum dolor sit amet
-                            consectetur adipisicing elit. Harum eaque tempora
-                            unde expedita saepe! Quas eveniet aperiam illum
-                            delectus, magni ipsum quasi ex eum ipsa? Autem
-                            voluptas iusto necessitatibus doloribus.
-                          </p>
-                          <div class="rating">
-                            <span class="fa fa-star checked"></span> 4.7
-                          </div>
-                          <div class="price">$ 9.999,99</div>
-                          <p class="card-text">
-                            <small class="text-muted"
-                              >Por Jhon Doe</small
-                            >
-                          </p>
-                          <ul class="product-buttons">
-                            <li class="ver-perfil"><a href="" class="btn btn-secondary">Ver Perfil</a></li>
-                            <li class="carrito"><a href="" class="btn btn-secondary"><i class="fa-solid fa-cart-plus"></i></a></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                    <input type="radio" checked="checked" name="radio" />
-                  </div>
-                </label>
-                <label class="container producto4">
-                  <div class="card mb-3">
-                    <div class="row g-0">
-                      <div class="col-auto side-img4"></div>
-                      <div class="col">
-                        <div class="card-body">
-                          <h4 class="card-title">Producto 4</h4>
-                          <p class="card-text">Some example text.</p>
-                          <p class="card-text">
-                            This is a wider card with supporting text below as a
-                            natural lead-in to additional content. This content
-                            is a little bit longer. Lorem ipsum dolor sit amet
-                            consectetur adipisicing elit. Quo qui maiores
-                            officia obcaecati sunt provident vel repellat a
-                            voluptate temporibus, itaque vero at expedita est
-                            error voluptatum culpa veniam nobis!
-                          </p>
-                          <p class="card-text">
-                            <small class="text-muted"
-                              >Por Juan Doe</small
-                            >
-                          </p>
-                          <ul class="product-buttons">
-                            <li class="ver-perfil"><a href="" class="btn btn-secondary">Ver Perfil</a></li>
-                            <li class="carrito"><a href="" class="btn btn-secondary"><i class="fa-solid fa-cart-plus"></i></a></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                    <input type="radio" checked="checked" name="radio" />
-                  </div>
-                </label>
-              </div>
-              <div class="col-sm-6" id="productos-par">
-                <label class="container producto1">
-                  <div class="card mb-3">
-                    <div class="row g-0">
-                      <div class="col-auto side-img1"></div>
-                      <div class="col">
-                        <div class="card-body">
-                          <h4 class="card-title">Producto 1</h4>
-                          <p class="card-text">Some example text.</p>
-                          <p class="card-text">
-                            This is a wider card with supporting text below as a
-                            natural lead-in to additional content. This content
-                            is a little bit longer. Lorem, ipsum dolor sit amet
-                            consectetur adipisicing elit. Facere deleniti ipsum
-                            officia corporis expedita, alias iure reprehenderit
-                            ipsa rem, ullam optio? Numquam dolores vero
-                            voluptatum asperiores dolor ratione, minima modi.
-                          </p>
-                          <div class="rating">
-                            <span class="fa fa-star checked"></span> 4.7
-                          </div>
-                          <div class="price">$ 9.999,99</div>
-                          <p class="card-text">
-                            <small class="text-muted"
-                              >Por Jhon Doe</small
-                            >
-                          </p>
-                          <ul class="product-buttons">
-                            <li class="ver-perfil"><a href="" class="btn btn-secondary">Ver Perfil</a></li>
-                            <li class="carrito"><a href="" class="btn btn-secondary"><i class="fa-solid fa-cart-plus"></i></a></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                    <input type="radio" checked="checked" name="radio" />
-                  </div>
-                </label>
-                <label class="container producto2">
-                  <div class="card mb-3">
-                    <div class="row g-0">
-                      <div class="col-auto side-img2"></div>
-                      <div class="col">
-                        <div class="card-body">
-                          <h4 class="card-title">Producto 2</h4>
-                          <p class="card-text">
-                            This is a wider card with supporting text below as a
-                            natural lead-in to additional content. This content
-                            is a little bit longer. Lorem ipsum dolor sit amet
-                            consectetur, adipisicing elit. Labore at eius dicta
-                            quasi amet minima culpa numquam sunt commodi
-                            aliquid. Recusandae cumque eveniet a, possimus
-                            perferendis architecto! Enim, explicabo repellat!
-                          </p>
-                          <div class="rating">
-                            <span class="fa fa-star checked"></span> 4.7
-                          </div>
-                          <div class="price">$ 9.999,99</div>
-                          <p class="card-text">
-                            <small class="text-muted"
-                              >Por Jhon Doe</small
-                            >
-                          </p>
-                          <ul class="product-buttons">
-                            <li class="ver-perfil"><a href="" class="btn btn-secondary">Ver Perfil</a></li>
-                            <li class="carrito"><a href="" class="btn btn-secondary"><i class="fa-solid fa-cart-plus"></i></a></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                    <input type="radio" checked="checked" name="radio" />
-                  </div>
-                </label>
-                <label class="container producto3">
-                  <div class="card mb-3">
-                    <div class="row g-0">
-                      <div class="col-auto side-img3"></div>
-                      <div class="col">
-                        <div class="card-body">
-                          <h4 class="card-title">Producto 3</h4>
-                          <p class="card-text">Some example text.</p>
-                          <p class="card-text">
-                            This is a wider card with supporting text below as a
-                            natural lead-in to additional content. This content
-                            is a little bit longer. Lorem ipsum dolor sit, amet
-                            consectetur adipisicing elit. Provident animi,
-                            temporibus aspernatur praesentium quos harum
-                            delectus, doloremque alias iusto modi adipisci
-                            perspiciatis dignissimos eveniet! Saepe facilis enim
-                            exercitationem a accusantium!
-                          </p>
-                          <div class="rating">
-                            <span class="fa fa-star checked"></span> 4.7
-                          </div>
-                          <div class="price">$ 9.999,99</div>
-                          <p class="card-text">
-                            <small class="text-muted"
-                              >Por Jhon Doe</small
-                            >
-                          </p>
-                          <ul class="product-buttons">
-                            <li class="ver-perfil"><a href="" class="btn btn-secondary">Ver Perfil</a></li>
-                            <li class="carrito"><a href="" class="btn btn-secondary"><i class="fa-solid fa-cart-plus"></i></a></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                    <input type="radio" checked="checked" name="radio" />
-                  </div>
-                </label>
-                <label class="container producto4">
-                  <div class="card mb-3">
-                    <div class="row g-0">
-                      <div class="col-auto side-img4"></div>
-                      <div class="col">
-                        <div class="card-body">
-                          <h4 class="card-title">Producto 4</h4>
-                          <p class="card-text">Some example text.</p>
-                          <p class="card-text">
-                            This is a wider card with supporting text below as a
-                            natural lead-in to additional content. This content
-                            is a little bit longer. Lorem ipsum dolor sit amet
-                            consectetur adipisicing elit. Deserunt nulla, itaque
-                            magni libero hic debitis ducimus ex veritatis velit
-                            beatae cupiditate ut. Officia ducimus praesentium
-                            quidem repellat est esse. Sint.
-                          </p>
-                          <div class="rating">
-                            <span class="fa fa-star checked"></span> 4.7
-                          </div>
-                          <div class="price">$ 9.999,99</div>
-                          <p class="card-text">
-                            <small class="text-muted"
-                              >Por Jhon Doe</small
-                            >
-                          </p>
-                          <ul class="product-buttons">
-                            <li class="ver-perfil"><a href="" class="btn btn-secondary">Ver Perfil</a></li>
-                            <li class="carrito"><a href="" class="btn btn-secondary"><i class="fa-solid fa-cart-plus"></i></a></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                    <input type="radio" checked="checked" name="radio" />
-                  </div>
-                </label>
-              </div>
+              <div class="col-sm-6" id="productos-impar"></div>
+              <div class="col-sm-6" id="productos-par"></div>
             </div>
           </section>
         </div>
